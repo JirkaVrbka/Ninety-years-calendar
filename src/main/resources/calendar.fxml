@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="854.0" prefWidth="1234.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calendar.Controller">
+   <children>
+      <Button fx:id="btnSad" layoutX="1134.0" layoutY="79.0" mnemonicParsing="false" onAction="#pickSad" prefHeight="70.0" prefWidth="70.0" text="Sad" />
+      <Button fx:id="btnAverage" layoutX="1134.0" layoutY="149.0" mnemonicParsing="false" onAction="#pickAverage" prefHeight="70.0" prefWidth="70.0" text="Average" />
+      <Button fx:id="btnHappy" layoutX="1134.0" layoutY="219.0" mnemonicParsing="false" onAction="#pickHappy" prefHeight="70.0" prefWidth="70.0" text="Happy" />
+      <Text layoutX="1147.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today:" />
+      <Canvas fx:id="canvas" height="766.0" layoutX="21.0" layoutY="37.0" width="1103.0" />
+      <Text fx:id="date" layoutX="1147.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x/y/z" />
+      <Button fx:id="buttonPreviousMonth" layoutX="848.0" layoutY="814.0" mnemonicParsing="false" onAction="#showPreviousMonth" prefHeight="26.0" prefWidth="186.0" text="&lt;" />
+      <Button fx:id="buttonNextMonth" layoutX="1034.0" layoutY="814.0" mnemonicParsing="false" onAction="#showNextMonth" prefHeight="26.0" prefWidth="186.0" text="&gt;" />
+      <Text layoutX="14.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shown month:" />
+      <Text fx:id="textShownCalendar" layoutX="125.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mm/yyyyy" />
+   </children>
+</Pane>
